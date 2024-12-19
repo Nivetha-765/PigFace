@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig Emoji</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .pig-face {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: #f8c8dc; /* Light pink color */
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Ears */
+        .pig-ear-left,
+        .pig-ear-right {
+            position: absolute;
+            top: 20px;
+            width: 60px;
+            height: 80px;
+            background-color: #f8a3b7; /* Light pink color for ears */
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .pig-ear-left {
+            left: -30px;
+            transform: rotate(-25deg);
+        }
+
+        .pig-ear-right {
+            right: -30px;
+            transform: rotate(25deg);
+        }
+
+        /* Eyes */
+        .pig-eye-left,
+        .pig-eye-right {
+            position: absolute;
+            top: 60px;
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 50%;
+            border: 3px solid black;
+        }
+
+        .pig-eye-left {
+            left: 40px;
+        }
+
+        .pig-eye-right {
+            right: 40px;
+        }
+
+        /* Pupils */
+        .pig-pupil-left,
+        .pig-pupil-right {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            width: 12px;
+            height: 12px;
+            background-color: black;
+            border-radius: 50%;
+        }
+
+        .pig-pupil-left {
+            left: 12px;
+        }
+
+        .pig-pupil-right {
+            left: 12px;
+        }
+
+        /* Snout */
+        .pig-snout {
+            position: absolute;
+            top: 130px;
+            left: 50px;
+            width: 100px;
+            height: 60px;
+            background-color: #f8a3b7;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Nostrils */
+        .pig-nostril-left,
+        .pig-nostril-right {
+            position: absolute;
+            top: 18px;
+            width: 18px;
+            height: 18px;
+            background-color: black;
+            border-radius: 50%;
+        }
+
+        .pig-nostril-left {
+            left: 20px;
+        }
+
+        .pig-nostril-right {
+            right: 20px;
+        }
+
+        /* Smile */
+        .pig-smile {
+            position: absolute;
+            bottom: 20px;
+            left: 30px;
+            width: 140px;
+            height: 60px;
+            background-color: transparent;
+            border-top: 4px solid black;
+            border-radius: 0 0 70px 70px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="pig-face">
+        <!-- Ears -->
+        <div class="pig-ear-left"></div>
+        <div class="pig-ear-right"></div>
+
+        <!-- Eyes -->
+        <div class="pig-eye-left">
+            <div class="pig-pupil-left"></div>
+        </div>
+        <div class="pig-eye-right">
+            <div class="pig-pupil-right"></div>
+        </div>
+
+        <!-- Snout -->
+        <div class="pig-snout">
+            <div class="pig-nostril-left"></div>
+            <div class="pig-nostril-right"></div>
+        </div>
+
+        <!-- Smile -->
+        <div class="pig-smile"></div>
+    </div>
+
+</body>
+</html>
